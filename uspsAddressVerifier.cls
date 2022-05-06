@@ -40,7 +40,7 @@ public class uspsAddressVerifier {
         HttpRequest req = new HttpRequest();
         HttpResponse res = new HttpResponse();
         req.setMethod('GET');
-        req.setEndpoint( 'https://production.shippingapis.com/ShippingAPI.dll?API=Verify&XML=<AddressValidateRequest%20USERID="558FAMR04345"><Address%20ID="0">' + xmlOutput + '</Address></AddressValidateRequest>');
+        req.setEndpoint( 'https://production.shippingapis.com/ShippingAPI.dll?API=Verify&XML=<AddressValidateRequest%20USERID="*********"><Address%20ID="0">' + xmlOutput + '</Address></AddressValidateRequest>');
 
         
         
