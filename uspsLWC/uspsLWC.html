@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="USPS Address Search" icon-name="standard:location">
+        <lightning-button label="Search" slot="actions" onclick={handleSearch}></lightning-button>
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Address Line-1" data-name="AL2"></lightning-input>
+            <lightning-input type="text" label="Address Line-2" data-name="AL1"></lightning-input>
+            <lightning-input type="text" label="City" data-name="City"></lightning-input>
+            <lightning-input type="text" label="State" data-name="State"></lightning-input>
+            <lightning-input type="text" label="Zip" data-name="Zip5"></lightning-input>
+            <lightning-input type="text" label="Zip-4" data-name="Zip4"></lightning-input>
+        </div>
+        <div class="slds-m-around_medium" if:true={data}>
+            <h2><strong>Corrected Address:</strong> {data}</data></h2>
+        </div>
+    </lightning-card>
+</template>
